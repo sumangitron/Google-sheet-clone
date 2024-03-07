@@ -8,7 +8,7 @@ let state = {};
 
 const defultStyle = {
   fontFamily: "roboto",
-  fontSize: 16,
+  fontSize: 14,
   bold: false,
   italic: false,
   underline: false,

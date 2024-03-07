@@ -13,16 +13,23 @@
   </head>
   <body>
     <div id="root">
+      <section class="navBar">
+        <div class="tabs">File</div>
+        <div class="tabs" id="home">Home</div>
+        <div class="tabs">Insert</div>
+        <div class="tabs">Layout</div>
+        <div class="tabs">Help</div>
+      </section>
       <section class="head">
         <form>
-          <select name="fontFamily">
+          <select name="fontFamily" style="border: none; padding: 3px 4px; outline: none;">
             <option value="roboto">Roboto</option>
             <option value="josefin-sans">Josefin-Sans</option>
             <option value="pacifio">Pacifio</option>
             <option value="code-Pro">Code-Pro</option>
           </select>
   
-          <input type="number" name="fontSize" value="14" min="10" max="24"/>
+          <input type="number" name="fontSize" value="14" min="10" max="24" style="border: none; padding: 3px 0px; outline: none;"/>
   
           <div>
             <input type="checkbox" name="bold" id="bold" />
@@ -78,7 +85,7 @@
         <div class="row2">
           <div class="selected-cell">NA</div>
           <label for="fx">f(x)</label>
-          <input type="text" name="fx" id="fx" />
+          <input type="text" name="fx" id="fx" style="border: none; padding: 3px 4px; outline: none;" />
         </div>
       </section>
   
