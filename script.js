@@ -26,7 +26,6 @@ function creatRow(rowNumber) {
         cell.contentEditable = true;
         cell.id = `${String.fromCharCode(64 + i)}${rowNumber}`;
         cell.addEventListener("focus", onCellFocus);
-        // cell.addEventListener("input", onChangeContent);
         row.appendChild(cell);
     }
 

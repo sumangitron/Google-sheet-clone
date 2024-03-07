@@ -51,21 +51,6 @@ form.addEventListener("change", () => {
   const selectedCellElement = document.getElementById(selectedCell);
   applyStylesToElement(selectedCellElement, selectedValues);
 
-  // selectedCellElement.style.fontFamily = selectedValues.fontFamily;
-  // selectedCellElement.style.fontSize = `${selectedValues.fontSize}px`;
-  // selectedCellElement.style.textAlign = selectedValues.align;
-  // selectedCellElement.style.fontWeight = selectedValues.bold
-  //   ? "bold"
-  //   : "normal";
-  // selectedCellElement.style.fontStyle = selectedValues.italic
-  //   ? "italic"
-  //   : "normal";
-  // selectedCellElement.style.textDecoration = selectedValues.underline
-  //   ? "underline"
-  //   : "none";
-  // selectedCellElement.style.color = selectedValues.textColor;
-  // selectedCellElement.style.backgroundColor = selectedValues.bgColor;
-
   state[selectedCell] = selectedValues;
 });
 
@@ -101,13 +86,6 @@ function applyCurrentCellStyleToForm() {
   form.textColor.value = state[selectedCell].textColor;
   form.bgColor.value = state[selectedCell].bgColor;
 }
-
-// function onChangeContent() {
-//   const clickedCell = document.getElementById(selectedCell);
-//   let contentValue = clickedCell.innerText;
-//   console.log(contentValue);
-//   state[selectedCell].content = contentValue;
-// }
 
 //expression evalution
 const fx = document.getElementById("fx");
